@@ -1,11 +1,16 @@
 #include<stdio.h>
-#include<stdlib.h>
+ int main(){
+	printf("insert first number\n");
+	float n1;
+	float n2;
+	scanf("%f",&n1);
+	printf("insert second number\n");
+	scanf("%f",&n2);
+	if (n1 < n2)
+		printf("LOOOOL %f", n2);
+	else 
+		printf("LOOOLA %f", n1);
 
-int main(){
-int age=28;
-char name[]="kholoud";
-float height=1.73;
-
-printf("my name is %s I have %d and my height is %f \n", name, age , height);
-
+	return(0);
+	
 }
