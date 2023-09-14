@@ -2,11 +2,11 @@
 #include <stdlib.h>
 int main() {
       float T;
-      printf("entrer la temperateur :");
+      printf("entrer la temperateur :\n");
       scanf("%f", &T) ;
-      if(T<0)
+      if(T<=0)
       printf("glace");
-      else if (T >=0 && T <=100)
+      else if (T >0 && T <=100)
       printf("liquide");
       else
       printf("vapeur");
