@@ -3,13 +3,13 @@
 int x,y;
 char calculatrice;
 int main(){
-    printf("entre lee deux valeur de x: ");
+    printf("entre la valeur de x: ");
     scanf("%d",&x);
 
-    printf("Eneter operation between (+, -, ): "); 
+    printf("Eneter operation between (+, -,* ): "); 
     scanf(" %c", &calculatrice);
 
-    printf("entrer le deux valeur de y: ");
+    printf("entrer la valeur de y: ");
     scanf("%d",&y);
 
     switch(calculatrice){
@@ -17,7 +17,7 @@ int main(){
         break;
        case '-':printf("%d-%d=%d\n",x,y,(x-y));
        break;
-       case '':printf("%d%d=%d\n",x,y,(xy));
+       case '':printf("%d*%d=%d\n",x,y,(x*y));
 break;
 default:
 printf(" you are wrong\n");
