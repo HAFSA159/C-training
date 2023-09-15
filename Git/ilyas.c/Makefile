@@ -4,7 +4,7 @@ run:
 pull:
 	@git pull --rebase
 push:
-	@git add .
+	@git add --all
 	@git commit -m "newagain"
 	@git push
 
