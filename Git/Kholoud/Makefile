@@ -5,4 +5,4 @@ commit: add
 add: pull
 	git add .
 pull:
-	git pull --rebase
+	git pull 
