@@ -5,7 +5,7 @@ commit: add
 	git commit -m "changement"
 
 add: pull 
-	git add .
+	git add --all
 
 pull:
 	git pull 
