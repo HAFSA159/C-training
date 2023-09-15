@@ -1,0 +1,13 @@
+run:
+  gcc hafsa.c -o program && ./program
+
+commit: add
+ git commit -m "changement"
+
+add:
+  git add .
+
+push: commit
+  git push
+
+
