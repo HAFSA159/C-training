@@ -1,10 +1,5 @@
-push: commit
-	git push
-commit: add
-	git commit -m "commit"
-add: pull
-	git add .
-pull: fetch
-	git pull 
-fetch: 
-	git fetch
+run:
+	@git add --all
+	@git commit -m "New"
+	@git pull --rebase
+	@git push
