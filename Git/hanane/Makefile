@@ -1,7 +1,5 @@
 test:
-	
-	
 	@git add .   
-        @git commit -m "New"   
-        @git pull --rebase  
-        @git push
+	@git commit -m "New"   
+	@git pull --rebase  
+	@git push
