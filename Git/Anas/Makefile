@@ -1,4 +1,4 @@
-        #ADD+COMMIT+PULL+PUSH----ALL IN ONE COMMAND-----THANK ME LATER#
+        
 run:
 	
 	
