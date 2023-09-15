@@ -1,0 +1,18 @@
+#include<stdio.h>
+float main (float a , float b);
+
+ float min ;
+
+ printf("Enter a number:\n");
+
+ scanf("%f %f",&a ,&b );
+
+ if (a<b);
+
+ min = a;
+
+ else 
+
+ min = b;
+
+return min;
