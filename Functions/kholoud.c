@@ -36,12 +36,16 @@ scanf("%f %f %f %f",&n1,&n2,&n3,&n4);
 
 
 
-min=MinNbr(n1,n2);
-printf("le min de %f et %f  est: %f \n",n1,n2,min);
+min=MinNbr(MinNbr(n1,n2),MinNbr(n3,n4));
+printf("le min des quatres nombres est: %f \n",min);
 
 
-max=MaxNbr(n3,n4);
-printf("le max de %f et %f  est: %f \n",n3,n4,max);
+max=MaxNbr(MaxNbr(n1,n2),MaxNbr(n3,n4));
+printf("le max des quatres nombres est: %f \n",max);
+
+
+//max=MaxNbr(n3,n4);
+//printf("le max de %f et %f  est: %f \n",n3,n4,max);
 
 return 0;
 }
