@@ -1,3 +1,4 @@
+//write a program in C that store 5 numbers in object and counts the average of the numbers
 #include <stdio.h>
 
 int main() {
