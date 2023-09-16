@@ -11,7 +11,7 @@
  scanf("%f", &notes);
 
  la_note[i]=notes;
- somme = somme + la_note[i];
+ somme + = la_note[i];
 }
  moyenne = somme / 5;
  printf("la moyenne de la classe c'est: %.2f \n", moyenne);
