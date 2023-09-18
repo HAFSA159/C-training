@@ -3,6 +3,15 @@
 #include <string.h>
 
 
+double sqRoot(double a){
+
+double s,i;
+
+for( i=0.01;i*i<a;i=i+0.01);
+return i;
+
+}
+
 double squareRoot(double a) {
     
   double i = 0;
@@ -77,7 +86,7 @@ double n1,n2,res;
 		printf (" Division of %.2lf and %.2lf is: %.2f \n", n1, n2, res);  
 	    }  
 	    else if(strcmp (opt, "sqrt")==0){
-            res=squareRoot(n1);
+            res=sqRoot(n1);
                printf(" la racine carre de %.2lf est %.2lf \n", n1, res);
 		}
 	    else if(strcmp (opt, "pow")==0){
