@@ -1,30 +1,31 @@
 #include <stdio.h>
 
-void clean_buffer() {
-    while (getchar() != '\n');
+// Buble Sort Algorithm:
+void buble(int* arr, int size) {
+    for (int i = 0; i < size; i++) {
+        for (int j = 1; j < size - i; j++) {
+            if (arr[j] < arr[j - 1]) {
+                int swap = arr[j]; 
+                arr[j] = arr[j - 1]; 
+                arr[j - 1] = swap;
+            }
+        }
+    }
 }
 
-float insert_grades(float* arr) {
-    // Data entered by user: 
-    float sum = 0;
-    float average = 5;
-
-    for (int i = 0; i < 5; i++) {
-        do {
-            printf("Enter the grade of the %d st student: ", i + 1); 
-            if (scanf("%f", arr + i) != 1) *(arr + i) = -1;
-            clean_buffer();
-        } while (*(arr + i) == -1);
-        sum += *(arr + i);
+// Display An Array:
+void dispaly_arr(int* arr, int size) {
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
     }
-
-    return sum / average;
+    printf("\n");
 }
 
 int main() {
-    float student_grades[5]; 
-    float student_grades_avg = insert_grades(student_grades); 
-    printf("The average of grades is %.2f\n", student_grades_avg);
+    int size = 5;
+    int arr[size] = {5, 4, 3, 2, 1};
 
-    return 0; 
+    dispaly_arr(arr, size); 
+    buble(arr, size); 
+    dispaly_arr(arr, size); 
 }
