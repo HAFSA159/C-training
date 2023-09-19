@@ -19,12 +19,6 @@ for (i=0;i<n;i++){
 }
 }
 
-void DisplayStudent(Etudiant e,int n){
-
-    printf("Bienvenue dans le gestionnaire etudiant \n\n");
-    printf("La liste des etudiants \n");
-    printf("%d. Nom : %s, Age : %d \n",n,e.name,e.age);
-}
 
 
 void DisplayStudents(Etudiant *e, int n){
@@ -42,16 +36,15 @@ void DisplayStudents(Etudiant *e, int n){
 
 
 int main(){
-
-Etudiant e;
 int i,n;
 printf("Enter le nombre etudiant que vous voullez ajouter:\n");
 scanf("%d",&n);
+Etudiant e[n];
+
 printf("Ajouter un etudiant: \n");
 
-EnterStudent(&e,n);
-//DisplayStudent(e,n);
-DisplayStudents(&e,n);
+EnterStudent(e,n);
+DisplayStudents(e,n);
 
 
     return 0;
