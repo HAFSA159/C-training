@@ -18,7 +18,7 @@ void EnterStruct(Personne  *p){
 //fonction to display a personne infos
 void DisplayStruct(Personne p ){
 
-    printf(" mon age est :%d\n",p.age);
+    printf(" l age est :%d\n",p.age);
     printf("le nom est : %s \n",p.nom);
 }
 
