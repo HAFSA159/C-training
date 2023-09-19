@@ -16,13 +16,13 @@ struct Etudient etudient[nbEtudient];
 printf("Bienvenue dans le gestionnaire d'étudiants!\n");
 for(int i=0;i<nbEtudient;i++){
 printf("Entrez le nom de letudient :");
-scanf("%s",etudient[nbEtudient].nom);
+scanf("%s",etudient[i].nom);
 printf("Entrez lage de letudient :");
-scanf("%d",&etudient[nbEtudient].age);
+scanf("%d",&etudient[i].age);
 printf("Étudient ajouté avec succès\n");
 }
 for(int i=0;i<nbEtudient;i++){
-printf(" %d . Nom: %s , Age: %d", i+1, etudient[i].nom, etudient[i].age );
+printf(" %d . Nom: %s , Age: %d \n", i+1, etudient[i].nom, etudient[i].age );
 }
 return 0;
 }
