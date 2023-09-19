@@ -1,5 +1,5 @@
 push :
 	@git add --all
 	@git commit -m "sd"
-	@git pull
+	@git pull --rebase
 	@git push
