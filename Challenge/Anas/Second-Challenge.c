@@ -12,5 +12,6 @@
 
 	printf("Entrez les coordonnées du point 2 (x2 y2) :");
 	scanf("%f %f",&p2.cor1,&p2.cor2);
+
 	
 }
