@@ -16,6 +16,8 @@ for (i=0;i<n;i++){
     scanf("%s",e[i].name);
     printf("Entrer age etudiant ");
     scanf("%d",&e[i].age);
+
+    printf("Etudiant ajoute avec succes!\n");
 }
 }
 
